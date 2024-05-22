@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="kayıt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <h2 id="alert"></h2>
+            <input type="checkbox" id="walletToggle" hidden>
+            <label for="walletToggle" class="wallet-button">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+            <div class="wallet-info">
+                <p>Cüzdan Adresi: 0x123...456</p>
+                <button class="disconnect-button">Bağlantıyı Kopar</button>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu">
+        </div>
+        <h1>Meüblockchain Sınav Konumları Belirleme Uygulaması</h1>
+        
+        <div class="form-container">
+            <h2>Kayıt Ol</h2>
+            <form id="registerForm">
+                <label for="registerUsername">İsim:</label>
+                <input type="text" id="name" name="registerUsername" required>
+               
+                <label for="registerUsername">Soyisim:</label>
+                <input type="text" id="surname" name="registerUsername" required>
+
+                <label for="registerStudentNumber">Okul Numarası:</label>
+                <input type="text" id="no" name="registerStudentNumber" required>
+                
+                <button type="button" id="button">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="/src/student-signup.ts"></script>
+
+</html>

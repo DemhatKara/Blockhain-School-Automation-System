@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav Yerleri</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <label for="walletToggle" class="wallet-button">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+            <input type="checkbox" id="walletToggle" hidden>
+            <div class="wallet-info">
+                <p>Cüzdan Adresi: 0x123...456</p>
+                <button class="disconnect-button">Bağlantıyı Kopar</button>
+            </div>
+        </div>
+        <h1>Sınıflar ve Öğrenciler</h1>
+ 
+        <div class="table-container">
+                <button id="Get">Getir</button>
+             <div class="tables">
+                <div class="table-classrooms">
+                    <h2>Sınav Yerleri</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sınıf Adı</th>
+                                <th>Ders Adı</th>
+                                <th>Tarih</th>
+                                <th>Saat</th>
+                                <th>Öğrenci Adı</th>
+                                <th>Öğrenci Soyisim</th>
+                                <th>Öğrenci Numarası</th>
+                                <th>Kapasite</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableStudent">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+     <script type="module" src="/src/student-table-list.ts"></script>
+</html>
