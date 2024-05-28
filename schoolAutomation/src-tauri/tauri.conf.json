@@ -4,7 +4,7 @@
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:5173",
-    "distDir": "./dist"
+    "distDir": "../dist"
   },
   "package": {
     "productName": "schoolautomation",
@@ -94,7 +94,8 @@
         "height": 600,
         "resizable": true,
         "title": "schoolautomation",
-        "width": 800
+        "width": 800,
+        "url": "index.html"
       }
     ]
   }

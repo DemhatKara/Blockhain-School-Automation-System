@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sınav Yerleri</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <label for="walletToggle" class="wallet-button">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <label for="walletToggle" class="mr-3">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
             <input type="checkbox" id="walletToggle" hidden>
-            <div class="wallet-info">
+            <div>
                 <p>Cüzdan Adresi: 0x123...456</p>
-                <button class="disconnect-button">Bağlantıyı Kopar</button>
+                <button class="btn btn-danger">Bağlantıyı Kopar</button>
             </div>
         </div>
-        <h1>Sınıflar ve Öğrenciler</h1>
- 
-        <div class="table-container">
-                <button id="Get">Getir</button>
-             <div class="tables">
-                <div class="table-classrooms">
-                    <h2>Sınav Yerleri</h2>
-                    <table>
+        <h1 class="mb-4">Sınıflar ve Öğrenciler</h1>
+
+        <div>
+            <button id="Get" class="btn btn-primary mb-4">Getir</button>
+            <div>
+                <h2>Sınav Yerleri</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Sınıf Adı</th>
@@ -40,11 +42,12 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
-
     </div>
+    <script type="module" src="/src/student-table-list.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-     <script type="module" src="/src/student-table-list.ts"></script>
+
 </html>

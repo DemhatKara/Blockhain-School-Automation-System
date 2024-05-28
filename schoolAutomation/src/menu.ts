@@ -1,5 +1,7 @@
 import { WebviewWindow } from '@tauri-apps/api/window';
 import { WalletMethods } from './walletMethods/waletMethod'
+import {  wagmiConfig } from './config'
+import { disconnect } from '@wagmi/core';
 
 const walletMethods = new WalletMethods()
 
@@ -7,6 +9,14 @@ const walletAddress = document.querySelector<HTMLSpanElement>("#walletAddress");
 
 const classAddMenuButton = document.querySelector<HTMLButtonElement>("#addClass");
 const shuffleListMenuButton = document.querySelector<HTMLButtonElement>("#shuffle");
+const exitButton = document.querySelector<HTMLButtonElement>("#exit")
+
+exitButton?.addEventListener('click',async () => {
+  disconnect(wagmiConfig)
+  localStorage.clear()
+  await WebviewWindow.getByLabel('main')?.show()
+  await WebviewWindow.getByLabel('menu')?.hide()
+})
 
 
 classAddMenuButton?.addEventListener('click', async () => {

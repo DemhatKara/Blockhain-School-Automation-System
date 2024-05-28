@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Paneli</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <label for="walletToggle" class="mr-3">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+            <button type="button" class="btn btn-warning" id="exit">Çıkış yap</button>
+            <input type="checkbox" id="walletToggle" hidden>
+            <div>
+                <p id="walletAddress"></p>
+                <button class="btn btn-danger">Bağlantıyı Kopar</button>
+            </div>
+        </div>
+        <h1 class="mb-4">Kontrol Paneli</h1>
+        <div>
+            <form>
+                <button type="button" class="btn btn-primary mb-2" id="addClass">Sınıf Ekle</button>
+                <button type="button" class="btn btn-secondary" id="shuffle">Sınav Yeri Belirleme</button> 
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/src/menu.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

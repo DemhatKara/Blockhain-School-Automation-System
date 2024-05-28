@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 id="alert"></h2>
+            <div>
+                <input type="checkbox" id="walletToggle" hidden>
+                <label for="walletToggle" class="mr-3">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+                <div>
+                    <p>Cüzdan Adresi: 0x123...456</p>
+                    <button class="btn btn-danger">Bağlantıyı Kopar</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-4">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu" class="img-fluid">
+        </div>
+        <h1 class="text-center mb-4">Meüblockchain Sınav Konumları Belirleme Uygulaması</h1>
+        
+        <div>
+            <h2 class="mb-4">Kayıt Ol</h2>
+            <form id="registerForm" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="name">İsim:</label>
+                    <input type="text" class="form-control" id="name" name="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Soyisim:</label>
+                    <input type="text" class="form-control" id="surname" name="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="field">Alan:</label>
+                    <input type="text" class="form-control" id="field" name="registerStudentNumber" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="button">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/src/teacher-signup.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

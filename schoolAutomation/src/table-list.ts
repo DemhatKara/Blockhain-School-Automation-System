@@ -7,6 +7,8 @@ const tableUser = document.querySelector("#tableUser")
 const tableShuffle = document.querySelector("#tableShuffle")
 const shuffleButton = document.querySelector<HTMLButtonElement>("#shuffleButton")
 const resetButton = document.querySelector<HTMLButtonElement>("#resetButton")
+const tableClass = document.querySelector("#tableClass")
+
 
 
 resetButton?.addEventListener('click', async () => {
@@ -115,6 +117,7 @@ window.addEventListener('load', async () => {
   }
 
   const getAllStudents: any = await walletMethods.getAllStudent()
+  const getAllClasses: any = await walletMethods.getAllClasses()
 
   getAllStudents.forEach((user: any) => {
     const tr = document.createElement('tr')
@@ -133,7 +136,27 @@ window.addEventListener('load', async () => {
 
     tableUser?.appendChild(tr)
   });
+
+  getAllClasses.forEach((classes: any) => {
+    const tr = document.createElement('tr')
+    const tdName = document.createElement('td')
+
+    tdName.innerText = classes.name;
+    tr.appendChild(tdName)
+
+    const tdClassName = document.createElement('td')
+    tdClassName.innerText = classes.className;
+    tr.appendChild(tdClassName)
+
+    const tdChairNumber = document.createElement('td')
+    tdChairNumber.innerText = classes.chairNumber
+    tr.appendChild(tdChairNumber)
+
+    tableClass?.appendChild(tr)
+  });
+
 })
+
 
 
 

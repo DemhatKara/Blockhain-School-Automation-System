@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <div class="mb-4">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu" class="img-fluid">
+        </div>
+        <h2 class="mb-4">Meüblockchain Sınav Konumları Belirleme Uygulaması</h2>
+        
+        <div class="mb-4">
+            <button id="connectWallet" class="btn btn-primary">Cüzdan Bağla</button>
+        </div>
+        <div id="statusForm" class="mb-4">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="status" id="teacher" value="0">
+                <label class="form-check-label" for="teacher">Teacher</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="status" id="student" value="1">
+                <label class="form-check-label" for="student">Student</label>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

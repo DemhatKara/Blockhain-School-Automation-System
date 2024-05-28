@@ -12,28 +12,28 @@ fn main() {
             tauri::WindowBuilder::new(
                 &handle,
                 "menu",
-                tauri::WindowUrl::App("menu-panel/menu.html".into()),
+                tauri::WindowUrl::App("assets/menu-panel/menu.html".into()),
             )
             .visible(false)
             .build();
             tauri::WindowBuilder::new(
                 &handle,
                 "studentMenu",
-                tauri::WindowUrl::App("menu-panel/studentMenu.html".into()),
+                tauri::WindowUrl::App("assets/menu-panel/studentMenu.html".into()),
             )
             .visible(false)
             .build();
             tauri::WindowBuilder::new(
                 &handle,
                 "classAdd",
-                tauri::WindowUrl::App("academy-control-panel/kontrol_paneli.html".into()),
+                tauri::WindowUrl::App("assets/academy-control-panel/kontrol_paneli.html".into()),
             )
             .visible(false)
             .build();
             tauri::WindowBuilder::new(
                 &handle,
                 "tableList",
-                tauri::WindowUrl::App("table-list/shuffle.html".into()),
+                tauri::WindowUrl::App("assets/table-list/shuffle.html".into()),
             )
             .visible(false)
             .build();
@@ -41,7 +41,7 @@ fn main() {
             tauri::WindowBuilder::new(
                 &handle,
                 "studentList",
-                tauri::WindowUrl::App("student-control-panel/student-control-panel.html".into()),
+                tauri::WindowUrl::App("assets/student-control-panel/student-control-panel.html".into()),
             )
             .visible(false)
             .build();
