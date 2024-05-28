@@ -24,6 +24,7 @@
     "@walletconnect/sign-client": "^2.13.0",
     "@walletconnect/web3wallet": "^1.12.0",
     "@web3modal/ethers5": "^4.2.0",
+    "@web3modal/react": "^2.7.1",
     "@web3modal/wagmi": "^4.2.0",
     "ethers": "^6.12.1",
     "qrcode": "^1.5.3",
